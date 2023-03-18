@@ -5,6 +5,8 @@ import lombok.Data;
 import java.util.*;
 /**
  *  prime number generator result
+ *  input intial
+ *  output primes
  *  @author divyavenkatesh
  */
 @Data
