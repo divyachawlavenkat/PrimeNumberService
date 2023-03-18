@@ -3,6 +3,10 @@ package com.api.PrimeNumberService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ *  prime number service application
+ *  @author divyavenkatesh
+ */
 @SpringBootApplication
 public class PrimeNumberServiceApplication {
 
