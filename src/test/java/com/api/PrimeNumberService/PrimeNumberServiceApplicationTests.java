@@ -11,7 +11,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 class PrimeNumberServiceApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
+		PrimeNumberServiceApplication.main(new String[] {});
 	}
 
 }
