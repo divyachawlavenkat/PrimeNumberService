@@ -1,6 +1,7 @@
 package com.api.PrimeNumberService.service;
 
 import org.springframework.stereotype.Service;
+
 import java.util.*;
 
 /**
@@ -8,6 +9,7 @@ import java.util.*;
  * existing code that implements that interface.
  * This is because existing implementations will simply inherit the default implementation of the new method.
  * Prime Numbers Generator Interface
+ *
  * @author Divya Venkatesh
  * @date 21/03/2023
  */

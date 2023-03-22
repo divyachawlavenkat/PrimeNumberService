@@ -45,12 +45,11 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 1;
 
         //when
-        IllegalArgumentException e = assertThrows(IllegalArgumentException.class, () -> {
-            primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
-        });
+        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
-        assertEquals("Input Number should be greater than 1", e.getMessage());
+        assertNotNull(response);
+        assertEquals(response, Collections.emptyList());
 
     }
 
@@ -60,12 +59,11 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 0;
 
         //when
-        IllegalArgumentException e = assertThrows(IllegalArgumentException.class, () -> {
-            primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
-        });
+        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
-        assertEquals("Input Number should be greater than 1", e.getMessage());
+        assertNotNull(response);
+        assertEquals(response, Collections.emptyList());
 
     }
 
@@ -75,12 +73,11 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = -100;
 
         //when
-        IllegalArgumentException e = assertThrows(IllegalArgumentException.class, () -> {
-            primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
-        });
+        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
-        assertEquals("Input Number should be greater than 1", e.getMessage());
+        assertNotNull(response);
+        assertEquals(response, Collections.emptyList());
 
     }
 
@@ -90,12 +87,11 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = -10;
 
         //when
-        IllegalArgumentException e = assertThrows(IllegalArgumentException.class, () -> {
-            primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
-        });
+        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
-        assertEquals("Input Number should be greater than 1", e.getMessage());
+        assertNotNull(response);
+        assertEquals(response, Collections.emptyList());
 
     }
 

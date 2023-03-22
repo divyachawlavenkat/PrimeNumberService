@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * prime number service application
+ * prime number service main spring boot application
  *
  * @author divyavenkatesh
  * @date 21/03/2023
