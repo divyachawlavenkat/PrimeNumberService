@@ -52,17 +52,27 @@ This project built in Maven to build, test and run.
 
 This project having strong unit and integration tests.
 
-This project running in that the service hoseted in tomat and spring boot server.
+This project running in that the service hosted in tomat and spring boot server.
 
 Please find the following screenshot examples where I ran this projet in my local port 8080 as I've tested unit and integration test cases as well as tested in Postman
 
 GET : http://localhost:8080/primes/10
-<img width="998" alt="Screenshot 2023-03-18 at 05 37 21" src="https://user-images.githubusercontent.com/16776911/226087547-f8b3b5f2-7783-4ec8-a65b-9b98acf0ba2d.png">
+<img width="1015" alt="Screenshot 2023-03-22 at 05 33 40" src="https://user-images.githubusercontent.com/16776911/226811638-34c09d4d-9029-4daa-84f7-4f0339f6a104.png">
 
-GET : http://localhost:8080/primes/20
-<img width="998" alt="Screenshot 2023-03-18 at 05 37 13" src="https://user-images.githubusercontent.com/16776911/226087554-16cdd4d8-53f2-48d4-bbb1-78b2814b835e.png">
+GET : http://localhost:8080/primes/1
+<img width="1015" alt="Screenshot 2023-03-22 at 05 34 18" src="https://user-images.githubusercontent.com/16776911/226811738-65aa0d69-6a3e-44ea-8792-a2d6f2e5c699.png">
+
+GET : http://localhost:8080/primes/0
+<img width="1015" alt="Screenshot 2023-03-22 at 05 35 22" src="https://user-images.githubusercontent.com/16776911/226811881-e8d6f6fc-7380-4cf4-9c72-34a5a15e9c68.png">
 
 
+GET : http://localhost:8080/primes/100
+<img width="1015" alt="Screenshot 2023-03-22 at 05 35 46" src="https://user-images.githubusercontent.com/16776911/226812003-8304e3a5-9a59-4d57-a2e3-643f9cb2609a.png">
 
-This project accessible from this Github.
+
+GET : http://localhost:8080/primes/-45
+<img width="1015" alt="Screenshot 2023-03-22 at 05 36 36" src="https://user-images.githubusercontent.com/16776911/226812065-b7543398-1752-432d-955e-5c28dea18700.png">
+
+
+This project accessible from this Github.Please use your local port to run this project in your local like above.
 
