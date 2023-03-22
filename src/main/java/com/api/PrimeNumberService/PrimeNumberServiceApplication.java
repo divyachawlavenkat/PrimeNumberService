@@ -4,14 +4,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- *  prime number service application
- *  @author divyavenkatesh
+ * prime number service application
+ *
+ * @author divyavenkatesh
+ * @date 21/03/2023
  */
 @SpringBootApplication
 public class PrimeNumberServiceApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(PrimeNumberServiceApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(PrimeNumberServiceApplication.class, args);
+    }
 
 }
