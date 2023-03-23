@@ -1,11 +1,13 @@
-# PrimeNumberService Application Programming Interface API
-API stands for Application Programming Interface. In Java 8 and Spring Boot, an API typically refers to a set of protocols, routines, and tools for building software applications. APIs provide a way for different software components to interact and communicate with each other.
+REST API TO GENERATE PRIME NUMBERS 
 
-In Java 8, the API includes many built-in interfaces and classes that developers can use to create applications. For example, the java.util package provides a set of utility classes and data structures, while the java.io package provides classes for input and output operations.
 
-In Spring Boot, APIs are often used to define the endpoints of a web application. Spring Boot provides a number of built-in APIs, such as the REST API, which allows developers to build web services that can be accessed over the internet using HTTP requests.
+REST (Representational State Transfer) is a popular architectural style used for developing web applications. RESTful APIs (Application Programming Interfaces) are web services that adhere to the REST architectural principles.
 
-Overall, APIs are an important part of modern software development, allowing developers to create complex applications by building on top of existing software components and services.
+Java Spring Boot is a popular framework for building web applications and RESTful APIs in Java. A Spring Boot application can easily be configured to expose a RESTful API.
+
+In a Spring Boot REST API, each resource (such as users, products, or orders) is represented by a unique URI (Uniform Resource Identifier). HTTP methods (such as GET, POST, PUT, DELETE) are used to interact with these resources.
+
+Spring Boot provides several annotations and classes to simplify the process of building a RESTful API. For example, the @RestController annotation can be used to create a controller class that handles incoming HTTP requests and produces a response.
 
 Problem statment :
 
