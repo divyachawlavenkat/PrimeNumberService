@@ -74,5 +74,6 @@ GET : http://localhost:8080/primes/-45
 <img width="1015" alt="Screenshot 2023-03-22 at 05 36 36" src="https://user-images.githubusercontent.com/16776911/226812065-b7543398-1752-432d-955e-5c28dea18700.png">
 
 
-This project accessible from this Github.Please use your local port to run this project in your local like above.
+Please use your local port (example : 8080) to run this project in your local machine .
+Project built in maven. 
 
