@@ -12,8 +12,10 @@ import java.util.*;
 
 
 /**
- * prime number generator controller
- * Controller method will call generate prime numbers service
+ *  controller method starts to process the web request by interacting with the service
+ *  Prime number generate controller
+ *  if URL request don't have both hours and minutes , just hitting /primes/{number} calculates and returns all the prime numbers up to and including a number provided.
+ *  if URL request having either hours or minutes any one optional param , we are getting input as numeric time and return human friendly text
  *
  * @author divyavenkatesh
  * @date 21/03/2023

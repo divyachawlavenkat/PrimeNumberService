@@ -17,8 +17,7 @@ public class PrimeNumberGeneratorServiceImpl implements PrimeNumberGeneratorServ
 
     /**
      * Implemented functional programming for Sieve of Eratosthenes algorithm to generate n primes
-     * Reason The time complexity of this algorithm is O(n log log n), where n is the limit.
-     * The space complexity is O(n),
+     * Reason The time complexity of this algorithm is O(n log log n), where n is the limit.The space complexity is O(n),
      * @param number number
      * @return {@link List}
      * @author divyavenkatesh

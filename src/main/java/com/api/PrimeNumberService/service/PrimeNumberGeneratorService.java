@@ -5,11 +5,8 @@ import org.springframework.stereotype.Service;
 import java.util.*;
 
 /**
- * Default methods in interfaces allow new methods to be added to an interface without breaking
- * existing code that implements that interface.
- * This is because existing implementations will simply inherit the default implementation of the new method.
  * Prime Numbers Generator Interface
- *
+ * Reason Default methods in interfaces allow new methods to be added to an interface without breaking existing code that implements that interface.
  * @author Divya Venkatesh
  * @date 21/03/2023
  */

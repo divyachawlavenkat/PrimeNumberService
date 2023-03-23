@@ -20,6 +20,8 @@ import org.junit.Test;
 /**
  * integration test cases
  * Testcases for all valid and invalid input number
+ * Test cases for Objective 1 --> REST API service to calculate and returns all the prime numbers up to and including a valid input number provided.
+ * Test Cases for Objective 2 --->REST API service will throw custom ResponseEnity message for invalid input number like 1,0, negative integers
  *
  * @author divyavenkatesh
  * @date 21/03/2023
