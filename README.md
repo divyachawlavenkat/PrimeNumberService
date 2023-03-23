@@ -76,4 +76,6 @@ GET : http://localhost:8080/primes/-45
 
 Please use your local port (example : 8080) to run this project in your local machine .
 Project built in maven. 
+Project frmawork is Spring Boot.
+ 
 
