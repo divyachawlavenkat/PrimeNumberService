@@ -1,5 +1,6 @@
 package com.api.PrimeNumberService.unitTest;
 
+import com.api.PrimeNumberService.model.PrimeNumberGeneratorResponse;
 import com.api.PrimeNumberService.service.PrimeNumberGeneratorServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -34,11 +35,12 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 10;
 
         //when
-        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
-        assertEquals(response, Arrays.asList(2, 3, 5, 7));
+        assertEquals(response.getInitial(), inputNumberToCheckPrimes);
+        assertEquals(response.getPrimes(), Arrays.asList(2, 3, 5, 7));
 
     }
 
@@ -48,11 +50,12 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 1;
 
         //when
-        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
-        assertEquals(response, Collections.emptyList());
+        assertEquals(response.getInitial(), inputNumberToCheckPrimes);
+        assertEquals(response.getPrimes(), Collections.emptyList());
 
     }
 
@@ -62,11 +65,12 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 0;
 
         //when
-        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
-        assertEquals(response, Collections.emptyList());
+        assertEquals(response.getInitial(), inputNumberToCheckPrimes);
+        assertEquals(response.getPrimes(), Collections.emptyList());
 
     }
 
@@ -76,11 +80,12 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = -100;
 
         //when
-        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
-        assertEquals(response, Collections.emptyList());
+        assertEquals(response.getInitial(), inputNumberToCheckPrimes);
+        assertEquals(response.getPrimes(), Collections.emptyList());
 
     }
 
@@ -90,11 +95,12 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = -10;
 
         //when
-        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
-        assertEquals(response, Collections.emptyList());
+        assertEquals(response.getInitial(), inputNumberToCheckPrimes);
+        assertEquals(response.getPrimes(), Collections.emptyList());
 
     }
 
@@ -105,11 +111,12 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 20;
 
         //when
-        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
-        assertEquals(response, Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19));
+        assertEquals(response.getInitial(), inputNumberToCheckPrimes);
+        assertEquals(response.getPrimes(), Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19));
     }
 
     @Test
@@ -118,11 +125,12 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 100;
 
         //when
-        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
-        assertEquals(response, Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97));
+        assertEquals(response.getInitial(), inputNumberToCheckPrimes);
+        assertEquals(response.getPrimes(), Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97));
     }
 
     @Test
@@ -131,11 +139,12 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 50;
 
         //when
-        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
-        assertEquals(response, Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47));
+        assertEquals(response.getInitial(), inputNumberToCheckPrimes);
+        assertEquals(response.getPrimes(), Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47));
     }
 
     @Test
@@ -144,11 +153,12 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 12;
 
         //when
-        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
-        assertEquals(response, Arrays.asList(2, 3, 5, 7, 11));
+        assertEquals(response.getInitial(), inputNumberToCheckPrimes);
+        assertEquals(response.getPrimes(), Arrays.asList(2, 3, 5, 7, 11));
     }
 
     @Test
@@ -157,11 +167,12 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 4;
 
         //when
-        List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
-        assertEquals(response, Arrays.asList(2, 3));
+        assertEquals(response.getInitial(), inputNumberToCheckPrimes);
+        assertEquals(response.getPrimes(), Arrays.asList(2, 3));
 
     }
 
@@ -180,11 +191,12 @@ public class PrimeNumberGeneratorUnitTest {
 
         //when
         assertDoesNotThrow(() -> {
-            List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+            PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
             //then
             assertNotNull(response);
-            assertEquals(response, Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79));
+            assertEquals(response.getInitial(), inputNumberToCheckPrimes);
+            assertEquals(response.getPrimes(), Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79));
         });
     }
 
@@ -196,11 +208,12 @@ public class PrimeNumberGeneratorUnitTest {
 
         //when
         assertDoesNotThrow(() -> {
-            List<Integer> response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+            PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
             //then
             assertNotNull(response);
-            assertEquals(response, Arrays.asList(2, 3, 5, 7, 11, 13));
+            assertEquals(response.getInitial(), inputNumberToCheckPrimes);
+            assertEquals(response.getPrimes(), Arrays.asList(2, 3, 5, 7, 11, 13));
         });
     }
 }

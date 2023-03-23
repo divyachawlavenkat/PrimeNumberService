@@ -1,5 +1,6 @@
 package com.api.PrimeNumberService.service;
 
+import com.api.PrimeNumberService.model.PrimeNumberGeneratorResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -24,11 +25,12 @@ public class PrimeNumberGeneratorServiceImpl implements PrimeNumberGeneratorServ
      * @date 21/03/2023
      */
     @Override
-    public List<Integer> generatePrimes(int number) {
-        return IntStream.rangeClosed(2, number)
+    public PrimeNumberGeneratorResponse generatePrimes(int number) {
+        List<Integer> primes =IntStream.rangeClosed(2, number)
                 .filter(n -> IntStream.rangeClosed(2, (int) Math.sqrt(n)).allMatch(i -> n % i != 0))
                 .boxed()
                 .collect(Collectors.toList());
+        return new PrimeNumberGeneratorResponse(number,primes);
     }
 }
 
