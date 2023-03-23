@@ -1,4 +1,11 @@
-# PrimeNumberService
+# PrimeNumberService Application Programming Interface API
+API stands for Application Programming Interface. In Java 8 and Spring Boot, an API typically refers to a set of protocols, routines, and tools for building software applications. APIs provide a way for different software components to interact and communicate with each other.
+
+In Java 8, the API includes many built-in interfaces and classes that developers can use to create applications. For example, the java.util package provides a set of utility classes and data structures, while the java.io package provides classes for input and output operations.
+
+In Spring Boot, APIs are often used to define the endpoints of a web application. Spring Boot provides a number of built-in APIs, such as the REST API, which allows developers to build web services that can be accessed over the internet using HTTP requests.
+
+Overall, APIs are an important part of modern software development, allowing developers to create complex applications by building on top of existing software components and services.
 
 Problem statment :
 
