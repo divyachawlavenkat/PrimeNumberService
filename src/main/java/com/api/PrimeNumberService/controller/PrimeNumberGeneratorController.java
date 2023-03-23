@@ -24,8 +24,9 @@ public class PrimeNumberGeneratorController {
     PrimeNumberGeneratorServiceImpl primeNumberGeneratorServiceImpl;
 
     /**
-     * getPrimes calculates and returns all the prime numbers up to and including a number provided.
-     * Return ResponseEntity JSON content "Initial" and "Primes"
+     * getPrimes method calculates and returns all the prime numbers up to and including a number provided.
+     * Return ResponseEntity
+     * JSON result "Initial" and "Primes"
      *
      * @param number number
      * @return {@link ResponseEntity}
@@ -47,8 +48,9 @@ public class PrimeNumberGeneratorController {
     }
 
     /**
-     * custom message to a ResponseEntity
-     * ResponseEntityBuilder class to create the response entity and set the message using the body() method
+     * custom message invalid input via ResponseEntity
+     * Return custom message to end user
+     * JSON result "InvalidInput", "Input Number should be greater than 1"
      *
      * @author Divya Venkatesh
      * @date 21/03/2023

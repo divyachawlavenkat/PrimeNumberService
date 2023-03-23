@@ -12,7 +12,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 /**
- * prime number generator unit test cases
+ * unit test cases to test method generatePrimes()
+ * Test cases for all valid and invalid input numbers
  *
  * @author divyavenkatesh
  * @date 21/03/2023

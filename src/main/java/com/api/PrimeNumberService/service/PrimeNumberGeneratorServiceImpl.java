@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * prime number generator service methods implementation
+ * prime number generator service method implementation
  *
  * @author divyavenkatesh
  * @date 21/03/2023
@@ -16,14 +16,9 @@ import java.util.stream.IntStream;
 public class PrimeNumberGeneratorServiceImpl implements PrimeNumberGeneratorService {
 
     /**
-     * Implemented functional programming for Sieve of Eratosthenes algorithm
-     * Reason The time complexity of this algorithm is O(n log log n), where n is the limit. The space complexity is O(n),
-     * since we need to store an array of boolean values of size n+1 to mark the primes.
-     * Finds all prime numbers up to a given limit.
-     * It works by creating a list of numbers from 2 to the given limit and
-     * iteratively marking the multiples of each prime number as composite until all numbers have been checked.
-     * The remaining numbers in the list are then the prime numbers.
-     *
+     * Implemented functional programming for Sieve of Eratosthenes algorithm to generate n primes
+     * Reason The time complexity of this algorithm is O(n log log n), where n is the limit.
+     * The space complexity is O(n),
      * @param number number
      * @return {@link List}
      * @author divyavenkatesh

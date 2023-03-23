@@ -18,7 +18,8 @@ import org.junit.Test;
 
 
 /**
- * prime number generator integration test cases
+ * integration test cases
+ * Testcases for all valid and invalid input number
  *
  * @author divyavenkatesh
  * @date 21/03/2023
