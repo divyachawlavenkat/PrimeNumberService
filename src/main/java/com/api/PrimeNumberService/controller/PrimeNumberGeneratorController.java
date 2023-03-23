@@ -26,7 +26,9 @@ public class PrimeNumberGeneratorController {
     PrimeNumberGeneratorServiceImpl primeNumberGeneratorServiceImpl;
 
     /**
-     * getPrimes method calculates and returns all the prime numbers up to and including a number provided.
+     * @GetMapping is an annotation in Spring Boot that is used to map HTTP GET requests to a specific controller method.
+     * When a GET request is sent to the URL that is mapped to a method annotated with @GetMapping,
+     * Spring Boot invokes that method and returns the data that is returned by the method as an HTTP response.
      * Return ResponseEntity
      * JSON result "Initial" and "Primes"
      *
@@ -36,7 +38,7 @@ public class PrimeNumberGeneratorController {
      * @date 21/03/2023
      */
     @GetMapping("/primes/{number}")
-    public ResponseEntity<Map<String, Object>> getPrimes(@PathVariable int number) {
+    public ResponseEntity<Map<String, Object>> getPrimes(@PathVariable(value = "number") int number) {
         try {
             return Optional.of(number)
                     .filter(n -> n > 1)
