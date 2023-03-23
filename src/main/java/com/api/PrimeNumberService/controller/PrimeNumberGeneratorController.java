@@ -38,7 +38,7 @@ public class PrimeNumberGeneratorController {
             return Optional.of(number)
                     .filter(n -> n > 1)
                     .map(primeNumberGeneratorServiceImpl::generatePrimes)
-                    .map(primes -> Map.of("Primes", primes,"Initial", number))
+                    .map(primes -> Map.of("Initial", number,"Primes", primes))
                     .map(ResponseEntity::ok)
                     .orElseGet(this::customMessageForInvalidInput);
         } catch (IllegalArgumentException e) {
