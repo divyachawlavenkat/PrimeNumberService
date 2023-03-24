@@ -69,12 +69,13 @@ GET : http://localhost:8080/primes/10
 <img width="1015" alt="Screenshot 2023-03-22 at 05 33 40" src="https://user-images.githubusercontent.com/16776911/226811638-34c09d4d-9029-4daa-84f7-4f0339f6a104.png">
 
 GET : http://localhost:8080/primes/1
-<img width="1015" alt="Screenshot 2023-03-24 at 02 33 17" src="https://user-images.githubusercontent.com/16776911/227409661-7e79f22e-0def-41e4-88df-aaddb62281b9.png">
+<img width="1014" alt="Screenshot 2023-03-24 at 02 51 22" src="https://user-images.githubusercontent.com/16776911/227412045-25f656da-e7bf-440e-87ad-64f62b6e9d83.png">
 
 
 
 GET : http://localhost:8080/primes/0
-<img width="1014" alt="Screenshot 2023-03-24 at 02 34 13" src="https://user-images.githubusercontent.com/16776911/227409720-1a894638-c54e-43c2-a8a9-cb6e8defa487.png">
+<img width="1014" alt="Screenshot 2023-03-24 at 02 52 28" src="https://user-images.githubusercontent.com/16776911/227412126-f0df5aa7-e36a-427a-ba4e-451cc9dba7a2.png">
+
 
 
 
@@ -83,12 +84,16 @@ GET : http://localhost:8080/primes/100
 
 
 GET : http://localhost:8080/primes/-45
-<img width="1014" alt="Screenshot 2023-03-24 at 02 34 36" src="https://user-images.githubusercontent.com/16776911/227409783-1ae71d2e-6c01-482a-8870-b70ccda113f3.png">
+<img width="1014" alt="Screenshot 2023-03-24 at 02 52 59" src="https://user-images.githubusercontent.com/16776911/227412195-ec484124-8848-4842-a15d-abcc861b32f2.png">
+
 
 
 
 Please use your system local port (example : 8080) to run this project in your local machine .
 Project built in maven. 
 Project framework is Spring Boot.
+All cases Junit Integration test and unit Test added.
+Used OpenJDK 17 for this project.
+Used JAVA 8+ features like streams, Optional,rangeClosed(),boxed() etc..
  
 
