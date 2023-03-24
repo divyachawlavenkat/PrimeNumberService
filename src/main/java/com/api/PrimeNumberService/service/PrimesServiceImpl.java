@@ -9,8 +9,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * prime number generator service method implementation
- *
+ * prime number generator service methods implementation
  * @author divyavenkatesh
  * @date 21/03/2023
  */
@@ -26,12 +25,12 @@ public class PrimesServiceImpl implements PrimesService {
      * @date 21/03/2023
      */
     @Override
-    public PrimesResponse generatePrimes(int number) {
-        List<Integer> primes =IntStream.rangeClosed(2, number)
+    public PrimesResponse getPrimes(int number) {
+        List<Integer> primes = IntStream.rangeClosed(2, number)
                 .filter(n -> IntStream.rangeClosed(2, (int) Math.sqrt(n)).allMatch(i -> n % i != 0))
                 .boxed()
                 .collect(Collectors.toList());
-        return new PrimesResponse(number,primes);
+        return new PrimesResponse(number, primes);
     }
 
     /**
@@ -45,8 +44,8 @@ public class PrimesServiceImpl implements PrimesService {
     @Override
     public ResponseEntity<Map<String, String>> customMessageForInvalidInput() {
         return ResponseEntity.ok(Map.of(
-                "Error", "Invalid input number",
-                "Message", "Initial input number should not be less than 2"
+                "Message", "To get primes initial number should not be less than 2 and negative integer",
+                "Error", "Invalid input number"
         ));
     }
 }

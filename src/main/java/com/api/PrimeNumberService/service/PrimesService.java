@@ -17,6 +17,7 @@ import java.util.Map;
 @Service
 public interface PrimesService {
 
-    PrimesResponse generatePrimes(int inputNumber);
-    ResponseEntity<Map<String, String>>customMessageForInvalidInput();
+    PrimesResponse getPrimes(int inputNumber);
+
+    ResponseEntity<Map<String, String>> customMessageForInvalidInput();
 }

@@ -13,10 +13,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 /**
- * unit test cases to test method generatePrimes()
+ * unit test cases to test method getPrimes()
  * Testcases for all valid and invalid input number
  * Test cases for Objective 1 --> REST API service to calculate and returns all the prime numbers up to and including a valid input number provided.
- * Test Cases for Objective 2 --->REST API service will throw custom ResponseEnity message for invalid input number like 1,0, negative integers
+ * Test Cases for Objective 2 --->REST API service will throw custom ResponseEntity message for invalid input number like 1,0, negative integers
  *
  * @author divyavenkatesh
  * @date 21/03/2023
@@ -35,7 +35,7 @@ public class PrimesUnitTest {
         int inputNumberToCheckPrimes = 10;
 
         //when
-        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.getPrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -50,7 +50,7 @@ public class PrimesUnitTest {
         int inputNumberToCheckPrimes = 1;
 
         //when
-        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.getPrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -65,7 +65,7 @@ public class PrimesUnitTest {
         int inputNumberToCheckPrimes = 0;
 
         //when
-        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.getPrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -80,7 +80,7 @@ public class PrimesUnitTest {
         int inputNumberToCheckPrimes = -100;
 
         //when
-        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.getPrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -95,7 +95,7 @@ public class PrimesUnitTest {
         int inputNumberToCheckPrimes = -10;
 
         //when
-        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.getPrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -111,7 +111,7 @@ public class PrimesUnitTest {
         int inputNumberToCheckPrimes = 20;
 
         //when
-        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.getPrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -125,7 +125,7 @@ public class PrimesUnitTest {
         int inputNumberToCheckPrimes = 100;
 
         //when
-        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.getPrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -139,7 +139,7 @@ public class PrimesUnitTest {
         int inputNumberToCheckPrimes = 50;
 
         //when
-        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.getPrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -153,7 +153,7 @@ public class PrimesUnitTest {
         int inputNumberToCheckPrimes = 12;
 
         //when
-        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.getPrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -167,7 +167,7 @@ public class PrimesUnitTest {
         int inputNumberToCheckPrimes = 4;
 
         //when
-        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.getPrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -178,9 +178,9 @@ public class PrimesUnitTest {
 
     @Test
     public void testInvalidInput() {
-        assertThrows(IllegalArgumentException.class, () -> primeNumberGeneratorServiceImpl.generatePrimes(Integer.parseInt("aa")));
-        assertThrows(IllegalArgumentException.class, () -> primeNumberGeneratorServiceImpl.generatePrimes(Integer.parseInt("test")));
-        assertThrows(IllegalArgumentException.class, () -> primeNumberGeneratorServiceImpl.generatePrimes(Integer.parseInt("wrongInput")));
+        assertThrows(IllegalArgumentException.class, () -> primeNumberGeneratorServiceImpl.getPrimes(Integer.parseInt("aa")));
+        assertThrows(IllegalArgumentException.class, () -> primeNumberGeneratorServiceImpl.getPrimes(Integer.parseInt("test")));
+        assertThrows(IllegalArgumentException.class, () -> primeNumberGeneratorServiceImpl.getPrimes(Integer.parseInt("wrongInput")));
     }
 
 
@@ -191,7 +191,7 @@ public class PrimesUnitTest {
 
         //when
         assertDoesNotThrow(() -> {
-            PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+            PrimesResponse response = primeNumberGeneratorServiceImpl.getPrimes(inputNumberToCheckPrimes);
 
             //then
             assertNotNull(response);
@@ -208,7 +208,7 @@ public class PrimesUnitTest {
 
         //when
         assertDoesNotThrow(() -> {
-            PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+            PrimesResponse response = primeNumberGeneratorServiceImpl.getPrimes(inputNumberToCheckPrimes);
 
             //then
             assertNotNull(response);
