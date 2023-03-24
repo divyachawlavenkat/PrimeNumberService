@@ -69,10 +69,13 @@ GET : http://localhost:8080/primes/10
 <img width="1015" alt="Screenshot 2023-03-22 at 05 33 40" src="https://user-images.githubusercontent.com/16776911/226811638-34c09d4d-9029-4daa-84f7-4f0339f6a104.png">
 
 GET : http://localhost:8080/primes/1
-<img width="1015" alt="Screenshot 2023-03-22 at 05 34 18" src="https://user-images.githubusercontent.com/16776911/226811738-65aa0d69-6a3e-44ea-8792-a2d6f2e5c699.png">
+<img width="1015" alt="Screenshot 2023-03-24 at 02 33 17" src="https://user-images.githubusercontent.com/16776911/227409661-7e79f22e-0def-41e4-88df-aaddb62281b9.png">
+
+
 
 GET : http://localhost:8080/primes/0
-<img width="1015" alt="Screenshot 2023-03-22 at 05 35 22" src="https://user-images.githubusercontent.com/16776911/226811881-e8d6f6fc-7380-4cf4-9c72-34a5a15e9c68.png">
+<img width="1014" alt="Screenshot 2023-03-24 at 02 34 13" src="https://user-images.githubusercontent.com/16776911/227409720-1a894638-c54e-43c2-a8a9-cb6e8defa487.png">
+
 
 
 GET : http://localhost:8080/primes/100
@@ -80,11 +83,12 @@ GET : http://localhost:8080/primes/100
 
 
 GET : http://localhost:8080/primes/-45
-<img width="1015" alt="Screenshot 2023-03-22 at 05 36 36" src="https://user-images.githubusercontent.com/16776911/226812065-b7543398-1752-432d-955e-5c28dea18700.png">
+<img width="1014" alt="Screenshot 2023-03-24 at 02 34 36" src="https://user-images.githubusercontent.com/16776911/227409783-1ae71d2e-6c01-482a-8870-b70ccda113f3.png">
 
 
-Please use your local port (example : 8080) to run this project in your local machine .
+
+Please use your system local port (example : 8080) to run this project in your local machine .
 Project built in maven. 
-Project frmawork is Spring Boot.
+Project framework is Spring Boot.
  
 
