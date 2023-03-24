@@ -1,4 +1,13 @@
-# PrimeNumberService
+REST API TO GENERATE PRIME NUMBERS 
+
+
+REST (Representational State Transfer) is a popular architectural style used for developing web applications. RESTful APIs (Application Programming Interfaces) are web services that adhere to the REST architectural principles.
+
+Java Spring Boot is a popular framework for building web applications and RESTful APIs in Java. A Spring Boot application can easily be configured to expose a RESTful API.
+
+In a Spring Boot REST API, each resource (such as users, products, or orders) is represented by a unique URI (Uniform Resource Identifier). HTTP methods (such as GET, POST, PUT, DELETE) are used to interact with these resources.
+
+Spring Boot provides several annotations and classes to simplify the process of building a RESTful API. For example, the @RestController annotation can be used to create a controller class that handles incoming HTTP requests and produces a response.
 
 Problem statment :
 
