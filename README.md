@@ -65,18 +65,22 @@ This project running in that the service hosted in tomat and spring boot server.
 
 Please find the following screenshot examples where I ran this projet in my local port 8080 as I've tested unit and integration test cases as well as tested in Postman
 
-GET : http://localhost:8080/primes/10
+PRIMES REST API URL HTTP GET : http://localhost:8080/primes/10
 <img width="1015" alt="Screenshot 2023-03-22 at 05 33 40" src="https://user-images.githubusercontent.com/16776911/226811638-34c09d4d-9029-4daa-84f7-4f0339f6a104.png">
 
-GET : http://localhost:8080/primes/1
+PRIMES REST API URL HTTP GET : http://localhost:8080/primes/16
+<img width="1019" alt="Screenshot 2023-03-24 at 13 41 51" src="https://user-images.githubusercontent.com/16776911/227537052-8d3b6a99-9850-434f-ae47-c57f52770958.png">
+
+
+PRIMES REST API URL HTTP GET  : http://localhost:8080/primes/1
 <img width="1014" alt="Screenshot 2023-03-24 at 02 51 22" src="https://user-images.githubusercontent.com/16776911/227412045-25f656da-e7bf-440e-87ad-64f62b6e9d83.png">
 
+PRIMES REST API URL HTTP GET : http://localhost:8080/primes/20
+<img width="1019" alt="Screenshot 2023-03-24 at 13 43 07" src="https://user-images.githubusercontent.com/16776911/227537337-1644b93c-c4b6-416a-b79c-1e2afb6b3a32.png">
 
 
 GET : http://localhost:8080/primes/0
 <img width="1014" alt="Screenshot 2023-03-24 at 02 52 28" src="https://user-images.githubusercontent.com/16776911/227412126-f0df5aa7-e36a-427a-ba4e-451cc9dba7a2.png">
-
-
 
 
 GET : http://localhost:8080/primes/100
@@ -90,9 +94,9 @@ GET : http://localhost:8080/primes/-45
 
 
 Please use your system local port (example : 8080) to run this project in your local machine .
-Project built in maven. 
-Project framework is Spring Boot.
-All cases Junit Integration test and unit Test added.
+This Project built in maven. 
+This Project framework is Spring Boot.
+All test cases Junit Integration test and unit Test added.
 Used OpenJDK 17 for this project.
 Used JAVA 8+ features like streams, Optional,rangeClosed(),boxed() etc..
  
