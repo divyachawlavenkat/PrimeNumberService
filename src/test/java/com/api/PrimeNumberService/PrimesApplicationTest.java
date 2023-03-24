@@ -10,11 +10,11 @@ import org.springframework.boot.test.context.SpringBootTest;
  * @date 21/03/2023
  */
 @SpringBootTest
-class PrimeNumberServiceApplicationTests {
+class PrimesApplicationTest {
 
     @Test
     public void contextLoads() {
-        PrimeNumberServiceApplication.main(new String[]{});
+        PrimesApplication.main(new String[]{});
     }
 
 }

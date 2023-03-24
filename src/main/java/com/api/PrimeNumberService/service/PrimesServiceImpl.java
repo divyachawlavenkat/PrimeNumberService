@@ -1,6 +1,7 @@
 package com.api.PrimeNumberService.service;
 
-import com.api.PrimeNumberService.model.PrimeNumberGeneratorResponse;
+import com.api.PrimeNumberService.model.PrimesResponse;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -14,7 +15,7 @@ import java.util.stream.IntStream;
  * @date 21/03/2023
  */
 @Service
-public class PrimeNumberGeneratorServiceImpl implements PrimeNumberGeneratorService {
+public class PrimesServiceImpl implements PrimesService {
 
     /**
      * Implemented functional programming for Sieve of Eratosthenes algorithm to generate n primes
@@ -25,12 +26,28 @@ public class PrimeNumberGeneratorServiceImpl implements PrimeNumberGeneratorServ
      * @date 21/03/2023
      */
     @Override
-    public PrimeNumberGeneratorResponse generatePrimes(int number) {
+    public PrimesResponse generatePrimes(int number) {
         List<Integer> primes =IntStream.rangeClosed(2, number)
                 .filter(n -> IntStream.rangeClosed(2, (int) Math.sqrt(n)).allMatch(i -> n % i != 0))
                 .boxed()
                 .collect(Collectors.toList());
-        return new PrimeNumberGeneratorResponse(number,primes);
+        return new PrimesResponse(number,primes);
+    }
+
+    /**
+     * custom error message invalid input via ResponseEntity
+     * Return custom message to end user
+     * JSON result "InvalidInput", "Initial input number should not be less than 2"
+     *
+     * @author Divya Venkatesh
+     * @date 21/03/2023
+     */
+    @Override
+    public ResponseEntity<Map<String, String>> customMessageForInvalidInput() {
+        return ResponseEntity.ok(Map.of(
+                "Error", "Invalid input number",
+                "Message", "Initial input number should not be less than 2"
+        ));
     }
 }
 

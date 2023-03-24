@@ -30,7 +30,7 @@ import org.junit.Test;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class PrimeNumberGeneratorIntegrationTest {
+public class PrimesIntegrationTest {
 
     @Autowired
     MockMvc mockMvc;
@@ -58,8 +58,8 @@ public class PrimeNumberGeneratorIntegrationTest {
         //when
         mockMvc.perform(MockMvcRequestBuilders.get(requestUrl))
                 //then
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.InvalidInput").value("Input Number should be greater than 1"));
+                .andExpect(jsonPath("$.Error").value("Invalid input number"))
+                .andExpect(jsonPath("$.Message").value("Initial input number should not be less than 2"));
     }
 
     @Test
@@ -70,8 +70,8 @@ public class PrimeNumberGeneratorIntegrationTest {
         //when
         mockMvc.perform(MockMvcRequestBuilders.get(requestUrl))
                 //then
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.InvalidInput").value("Input Number should be greater than 1"));
+                .andExpect(jsonPath("$.Error").value("Invalid input number"))
+                .andExpect(jsonPath("$.Message").value("Initial input number should not be less than 2"));
     }
 
     @Test
@@ -82,8 +82,8 @@ public class PrimeNumberGeneratorIntegrationTest {
         //when
         mockMvc.perform(MockMvcRequestBuilders.get(requestUrl))
                 //then
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.InvalidInput").value("Input Number should be greater than 1"));
+                .andExpect(jsonPath("$.Error").value("Invalid input number"))
+                .andExpect(jsonPath("$.Message").value("Initial input number should not be less than 2"));
     }
 
     @Test

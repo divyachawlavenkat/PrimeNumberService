@@ -10,10 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 21/03/2023
  */
 @SpringBootApplication
-public class PrimeNumberServiceApplication {
+public class PrimesApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PrimeNumberServiceApplication.class, args);
+        SpringApplication.run(PrimesApplication.class, args);
     }
 
 }

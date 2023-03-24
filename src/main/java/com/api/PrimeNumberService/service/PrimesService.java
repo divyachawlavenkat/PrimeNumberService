@@ -1,7 +1,10 @@
 package com.api.PrimeNumberService.service;
 
-import com.api.PrimeNumberService.model.PrimeNumberGeneratorResponse;
+import com.api.PrimeNumberService.model.PrimesResponse;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import java.util.Map;
 
 
 /**
@@ -12,7 +15,8 @@ import org.springframework.stereotype.Service;
  * @date 21/03/2023
  */
 @Service
-public interface PrimeNumberGeneratorService {
+public interface PrimesService {
 
-    PrimeNumberGeneratorResponse generatePrimes(int inputNumber);
+    PrimesResponse generatePrimes(int inputNumber);
+    ResponseEntity<Map<String, String>>customMessageForInvalidInput();
 }

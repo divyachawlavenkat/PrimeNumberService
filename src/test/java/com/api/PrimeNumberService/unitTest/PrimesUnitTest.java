@@ -1,7 +1,7 @@
 package com.api.PrimeNumberService.unitTest;
 
-import com.api.PrimeNumberService.model.PrimeNumberGeneratorResponse;
-import com.api.PrimeNumberService.service.PrimeNumberGeneratorServiceImpl;
+import com.api.PrimeNumberService.model.PrimesResponse;
+import com.api.PrimeNumberService.service.PrimesServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -21,12 +21,12 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author divyavenkatesh
  * @date 21/03/2023
  */
-public class PrimeNumberGeneratorUnitTest {
-    private PrimeNumberGeneratorServiceImpl primeNumberGeneratorServiceImpl;
+public class PrimesUnitTest {
+    private PrimesServiceImpl primeNumberGeneratorServiceImpl;
 
     @BeforeEach
     public void setUp() {
-        primeNumberGeneratorServiceImpl = new PrimeNumberGeneratorServiceImpl();
+        primeNumberGeneratorServiceImpl = new PrimesServiceImpl();
     }
 
     @Test
@@ -35,7 +35,7 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 10;
 
         //when
-        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -50,7 +50,7 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 1;
 
         //when
-        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -60,12 +60,12 @@ public class PrimeNumberGeneratorUnitTest {
     }
 
     @Test
-    public void generatePrimes_returnsCorrectResult_whenZero() {
+    public void generatePrimes_returnsEmptyResult_whenZero() {
         //given
         int inputNumberToCheckPrimes = 0;
 
         //when
-        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -75,12 +75,12 @@ public class PrimeNumberGeneratorUnitTest {
     }
 
     @Test
-    public void generatePrimes_returnsCorrectResult_whenGivenNegativeNumber() {
+    public void generatePrimes_returnsEmptyResult_whenGivenNegativeNumber() {
         //given
         int inputNumberToCheckPrimes = -100;
 
         //when
-        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -95,7 +95,7 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = -10;
 
         //when
-        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -106,12 +106,12 @@ public class PrimeNumberGeneratorUnitTest {
 
     //
     @Test
-    public void generatePrimes_returnsEmptyList_whenGiven20() {
+    public void generatePrimes_returnsEmptyList_whenGivenTwenty() {
         //given
         int inputNumberToCheckPrimes = 20;
 
         //when
-        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -120,12 +120,12 @@ public class PrimeNumberGeneratorUnitTest {
     }
 
     @Test
-    public void generatePrimes_returnsCorrectResult_whenGiven100() {
+    public void generatePrimes_returnsCorrectResult_whenGivenHundred() {
         //given
         int inputNumberToCheckPrimes = 100;
 
         //when
-        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -134,12 +134,12 @@ public class PrimeNumberGeneratorUnitTest {
     }
 
     @Test
-    public void generatePrimes_returnsCorrectResult_whenGivenBigPositiveNumber() {
+    public void generatePrimes_returnsCorrectResult_whenGivenFiftyPositiveNumber() {
         //given
         int inputNumberToCheckPrimes = 50;
 
         //when
-        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -153,7 +153,7 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 12;
 
         //when
-        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -167,7 +167,7 @@ public class PrimeNumberGeneratorUnitTest {
         int inputNumberToCheckPrimes = 4;
 
         //when
-        PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+        PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
         //then
         assertNotNull(response);
@@ -191,7 +191,7 @@ public class PrimeNumberGeneratorUnitTest {
 
         //when
         assertDoesNotThrow(() -> {
-            PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+            PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
             //then
             assertNotNull(response);
@@ -208,7 +208,7 @@ public class PrimeNumberGeneratorUnitTest {
 
         //when
         assertDoesNotThrow(() -> {
-            PrimeNumberGeneratorResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
+            PrimesResponse response = primeNumberGeneratorServiceImpl.generatePrimes(inputNumberToCheckPrimes);
 
             //then
             assertNotNull(response);
