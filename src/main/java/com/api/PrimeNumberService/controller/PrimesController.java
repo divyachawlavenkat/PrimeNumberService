@@ -13,6 +13,8 @@ import java.util.*;
 
 
 /**
+ * REST Prime Controller will handle the incoming requests.
+ *
  * @author divyavenkatesh
  * @RestController annotation indicates that this is a REST controller that will handle incoming requests.
  * PrimesController method starts to process the web request by interacting with the service

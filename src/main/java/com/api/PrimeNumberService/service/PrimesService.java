@@ -8,7 +8,7 @@ import java.util.Map;
 
 
 /**
- * Prime Numbers Generator Interface
+ * Primes service Interface to declare methods without implementation.
  * Reason Default methods in interfaces allow new methods to be added to an interface without breaking existing code that implements that interface.
  *
  * @author Divya Venkatesh

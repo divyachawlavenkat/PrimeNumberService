@@ -9,7 +9,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * prime number generator service methods implementation
+ * primes service methods implementation
+ *
  * @author divyavenkatesh
  * @date 21/03/2023
  */
@@ -19,6 +20,7 @@ public class PrimesServiceImpl implements PrimesService {
     /**
      * Implemented functional programming for Sieve of Eratosthenes algorithm to generate n primes
      * Reason The time complexity of this algorithm is O(n log log n), where n is the limit.The space complexity is O(n),
+     *
      * @param number number
      * @return {@link List}
      * @author divyavenkatesh
