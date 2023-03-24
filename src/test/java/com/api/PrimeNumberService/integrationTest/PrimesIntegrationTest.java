@@ -59,7 +59,7 @@ public class PrimesIntegrationTest {
         mockMvc.perform(MockMvcRequestBuilders.get(requestUrl))
                 //then
                 .andExpect(jsonPath("$.Error").value("Invalid input number"))
-                .andExpect(jsonPath("$.Message").value("To get primes initial number should not be less than 2 and negative integer"));
+                .andExpect(jsonPath("$.Message").value("To get valid Primes, Initial input number should not be less than 2 and should not be negative integer"));
     }
 
     @Test
@@ -71,7 +71,7 @@ public class PrimesIntegrationTest {
         mockMvc.perform(MockMvcRequestBuilders.get(requestUrl))
                 //then
                 .andExpect(jsonPath("$.Error").value("Invalid input number"))
-                .andExpect(jsonPath("$.Message").value("To get primes initial number should not be less than 2 and negative integer"));
+                .andExpect(jsonPath("$.Message").value("To get valid Primes, Initial input number should not be less than 2 and should not be negative integer"));
     }
 
     @Test
@@ -83,7 +83,7 @@ public class PrimesIntegrationTest {
         mockMvc.perform(MockMvcRequestBuilders.get(requestUrl))
                 //then
                 .andExpect(jsonPath("$.Error").value("Invalid input number"))
-                .andExpect(jsonPath("$.Message").value("To get primes initial number should not be less than 2 and negative integer"));
+                .andExpect(jsonPath("$.Message").value("To get valid Primes, Initial input number should not be less than 2 and should not be negative integer"));
     }
 
     @Test

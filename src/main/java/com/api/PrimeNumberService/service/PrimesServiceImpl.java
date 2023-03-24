@@ -36,7 +36,7 @@ public class PrimesServiceImpl implements PrimesService {
     /**
      * custom error message invalid input via ResponseEntity
      * Return custom message to end user
-     * JSON result "InvalidInput", "Initial input number should not be less than 2"
+     * JSON result "InvalidInput", "Initial input number should not be less than 2 and should not be negative integer"
      *
      * @author Divya Venkatesh
      * @date 21/03/2023
@@ -44,7 +44,7 @@ public class PrimesServiceImpl implements PrimesService {
     @Override
     public ResponseEntity<Map<String, String>> customMessageForInvalidInput() {
         return ResponseEntity.ok(Map.of(
-                "Message", "To get primes initial number should not be less than 2 and negative integer",
+                "Message", "To get valid Primes, Initial input number should not be less than 2 and should not be negative integer",
                 "Error", "Invalid input number"
         ));
     }
